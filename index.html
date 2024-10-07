@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl" id="body">
+<!-- 
+    <header>
+        1                                                                                   
+    </header>
+-->
+
+<center>
+<h1 id="text">hello in this world</h1>
+
+</center>
+
+<div class="buttons" id="div-buttons">
+    <button id="red" style="background-color: red;">red</button>
+    <button id="blue" style="background-color: blue;">blue</button>
+    <button id="yellow" style="background-color: dodgerblue;">dodgerblue</button>
+</div>
+
+<div class="card" id="card">
+    <h2 style="margin:80px ;justify-content: center;">
+        اهلا بك لقد نجحت
+    </h2>
+</div>
+
+<button id="card button">card </button>
+
+<script>
+    const h1 = document.getElementById("text")
+    const bur=document.getElementById("red")
+    const bub=document.getElementById("blue")
+    const buy=document.getElementById("yellow")
+    const back=document.getElementById("body")
+    const card=document.getElementById("card")
+    const card_button = document.getElementById("card button")
+    const div_buttons = document.getElementById("div-buttons")
+    h1.addEventListener("click" , ()=>{
+        
+    h1.style.color="red"
+    // alert("done")
+    })
+
+    bub.addEventListener("click" , ()=>
+    {
+        
+        back.style.background="blue"
+        h1.style.color="white"
+
+    })
+
+    bur.addEventListener("click" , ()=>
+    {
+        
+        back.style.background="red"
+        h1.style.color="white"
+
+    })
+
+    buy.addEventListener("click" , ()=>
+    {
+        
+        back.style.background="dodgerblue"
+        h1.style.color="white"
+        // div_buttons.style.display="none"
+
+
+    })
+
+    card_button.addEventListener("click" , ()=>
+    {
+        
+        card.style.display="block"
+
+        
+
+    })
+</script>
+</body>
+</html>
